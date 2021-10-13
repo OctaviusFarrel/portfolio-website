@@ -25,6 +25,7 @@ h2 {
     color: white;
     text-align: center;
     font-size: 3rem;
+    padding: 32px 0;
 }
 
 nav {
@@ -148,10 +149,6 @@ nav a {
     nav a {
         font-size: 0.8rem;
     }
-
-    .about-page p {
-        font-size: 1.25rem;
-    }
     
     .skills-card p {
         font-size: 1.25rem;
@@ -179,6 +176,10 @@ nav a {
     }
 
     .skills-card p {
+        font-size: 1.35rem;
+    }
+
+    .about-page p {
         font-size: 1.35rem;
     }
 }
