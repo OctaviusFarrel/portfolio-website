@@ -85,6 +85,8 @@ nav a {
 .about-page img {
     width: min(80%, 250px);
     border-radius: 50%;
+    object-fit: fill;
+    margin: 25px 0;
 }
 
 .about-page p {
