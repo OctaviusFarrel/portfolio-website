@@ -134,6 +134,48 @@ nav a {
     background-color: #886560;
 }
 
+.projects-card {
+    display: flex;
+    width: 90%;
+    margin: 64px auto;
+    text-decoration: none;
+    color: white;
+    gap: 80px;
+    align-items: center;
+}
+
+.projects-card:nth-child(odd) {
+    flex-flow: row-reverse;
+    text-align: end;
+}
+
+.projects-card span {
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    font-family: 'Pavanam', sans-serif;
+}
+
+.projects-card h3 {
+    font-size: 2.5rem;
+}
+
+.projects-card p {
+    font-size: 1.5rem;
+}
+
+.projects-card img {
+    width: 600px;
+    height: 337.5px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.projects-card img[src=""] {
+    background-color: #656088;
+}
+
 
 @media only screen and (max-width:450px) {
     h2 {
