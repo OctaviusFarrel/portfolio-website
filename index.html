@@ -4,95 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Portfolio Website" />
+    <meta property="og:description" content="A simple portfolio website created by Octavius Farrel" />
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#landing">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-    </nav>
-    <section id="landing" class="landing-page">
-        <h1>Portfolio Website</h1>
-        <h2>This is a website where i show you what i have accomplished</h2>
-    </section>
-    <section id="about" class="about-page">
-        <h2>About</h2>
-        <img src="images/profile-picture.jpg" alt="Profile Picture">
-        <p>My name is Farrel, i like coding and i want to learn every programming language, because of my goal, i learned some programming language like Kotlin, Javascript. Even though a goal like that is impossible, at least i can keep motivated and eager to learn something new.</p>
-    </section>
-    <section id="skills" class="skills-page">
-        <h2>Skills</h2>
-        <div class="skills-card">
-            <img src="images/html.svg" alt="HTML">
-            <p>I have some knowledge of HTML.</p>
+    <body>
+        <nav>
+            <h1>Octavius Farrel</h1>
+            <div>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </div>
+        </nav>
+        <section id="home">
+            <div class="left">
+                <img src="images/profile-picture.jpg" alt="img">
+                <div class="text-container">
+                    <h1>Welcome to My Portfolio Website</h1>
+                    <h2>This is a website where i show you what i have accomplished</h2>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Learned Programming Language</h2>
+                <div class="images">
+                    <img src="images/javascript.svg" alt="">
+                    <img src="images/rust.svg" alt="">
+                    <img src="images/go.svg" alt="">
+                    <img src="images/php.svg" alt="">
+                    <img src="images/java.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="divider">
+            <hr>
+            <i></i>
+            <hr>
         </div>
-        <div class="skills-card">
-            <img src="images/css.svg" alt="CSS">
-            <p>I have a good knowledge of CSS, i can style and make a responsive website.</p>
+        <section id="about">
+            <h1>About</h1>
+            <p>My name is Farrel, I like coding and I want to learn every programming language, because of my goal, I have learned some programming languages like Rust, Javascript, and PHP. Even though a goal like that is impossible, at least I can keep motivated and eager to learn something new.</p>
+        </section>
+        <div class="divider">
+            <hr>
+            <i></i>
+            <hr>
         </div>
-        <div class="skills-card">
-            <img src="" alt="VueJS">
-            <p>I have some basic knowledge of VueJS.</p>
+        <section id="skills">
+            <h1>Skills</h1>
+            <p>These are some skills I’ve acquired</p>
+            <div class="skill-container">
+                <img src="images/javascript.svg" alt="">
+                <p>I’ve worked with Vue.js, React, Express.js, Sequelize.</p>
+            </div>
+            <div class="skill-container">
+                <img src="images/rust.svg" alt="">
+                <p>I’ve currently learning Rust for low level programming.</p>
+            </div>
+            <div class="skill-container">
+                <img src="images/go.svg" alt="">
+                <p>I’ve used Gin gonic as a backend and also using Gorm as an ORM to mysql.</p>
+            </div>
+            <div class="skill-container">
+                <img src="images/php.svg" alt="">
+                <p>I’ve used Laravel as a backend.</p>
+            </div>
+            <div class="skill-container">
+                <img src="images/java.svg" alt="">
+                <p>Java is one of the first language I’ve used, I primarily used Java for reverse engineering.</p>
+            </div>
+        </section>
+        <div class="divider">
+            <hr>
+            <i></i>
+            <hr>
         </div>
-        <div class="skills-card">
-            <img src="images/java.svg" alt="Java">
-            <p>I excelled at Java because i was having fun making Minecraft mods before i switched to Javascript to learn web development.</p>
-        </div>
-        <div class="skills-card">
-            <img src="images/javascript.svg" alt="Javascript">
-            <p>I have some good knowledge of Javascript and i’m planning to deepen my understanding of Javascript.</p>
-        </div>
-        <div class="skills-card">
-            <img src="" alt="Linux">
-            <p>I have some degree of understanding in Linux, i'm currently using Arch Linux as my operating system but i can use other things like Void Linux and Debian Linux.</p>
-        </div>
-        <div class="skills-card">
-            <img src="" alt="Laravel">
-            <p>I have been using Laravel for some months, i'm confident with my Laravel.</p>
-        </div>
-    </section>
-    <section id="projects" class="projects-page">
-        <h2>Projects</h2>
-        <a class="projects-card" href="https://github.com/OctaviusFarrel/order-summary-component">
-            <img src="https://raw.githubusercontent.com/OctaviusFarrel/order-summary-component/master/images/solution.jpeg">
-            <span>
-                <h3>Order Summary Component</h3>
-                <p>This is a project that was provided by Frontend Mentor, i've completed it in a day using CSS Flexbox. I also made it reponsive using CSS Breakpoints.</p>
-            </span>
-        </a>
-        <a class="projects-card" href="https://github.com/OctaviusFarrel/stats-preview-card-component-main">
-            <img src="https://raw.githubusercontent.com/OctaviusFarrel/stats-preview-card-component-main/master/images/screenshot.jpeg">
-            <span>
-                <h3>Stats Preview Card Component Main</h3>
-                <p>This is another project that was provided by Frontend Mentor, i've completed it in a day using CSS Flexbox again and made it reponsive using CSS Breakpoints.</p>
-            </span>
-        </a>
-        <a class="projects-card">
-            <img src="images/anicari-image.jpg">
-            <span>
-                <h3>Anime List App</h3>
-                <p>This is an android app that i created using Android Studio and Java for an end-semester exam. I created it using Singleton design pattern to challenge myself.</p>
-            </span>
-        </a>
-        <a class="projects-card">
-            <img src="images/inventaris_sekolah_image.png">
-            <span>
-                <h3>School Inventory</h3>
-                <p>This one is a local website that i made using VueJS as the frontend and Laravel as the backend</p>
-            </span>
-        </a>
-        <a class="projects-card" href="https://octavius-farrel-pas-ppkn.herokuapp.com">
-            <img src="images/pas_ppkn_image.png">
-            <span>
-                <h3>A Website About Climate Change</h3>
-                <p>I created this simple blog for my end-semester exam just recently. It was created using Express as the backend, and EJS as the view engine.</p>
-            </span>
-        </a>
-    </section>
-</body>
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="subtitle">
+                <p>These are some projects I’ve created</p>
+                <p>Previews are coming soon!</p>
+            </div>
+            <div class="skill-container">
+                <img src="images/javascript.svg" alt="">
+                <div class="text-container">
+                    <p>I’ve made a simple website about how important climate change is using Express.js as its backend and ejs as its template renderer</p>
+                    <a href="https://github.com/OctaviusFarrel/pas-ppkn/">Click Here</a>
+                </div>
+            </div>
+            <div class="skill-container">
+                <img src="images/go.svg" alt="">
+                <div class="text-container">
+                    <p>I’ve made a backend from Gin gonic as the base for my backend</p>
+                    <a href="https://github.com/OctaviusFarrel/latihan_web">Click Here</a>
+                </div>
+            </div>
+            <div class="skill-container">
+                <img src="images/java.svg" alt="">
+                <div class="text-container">
+                    <p>I’ve made an application using Android Studio as the IDE and using Singleton design pattern to challenge myself</p>
+                    <a href="https://github.com/OctaviusFarrel/PASGENAPRPL1024">Click Here</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>All SVG are from Wikimedia</p>
+            <p>Design System Based from Elastic UI</p>
+            <p>Octavius Farrel © 2023. All Rights Reserved</p>
+        </footer>
+    </body>
 </html>
